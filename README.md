@@ -7,7 +7,7 @@ This is the API backend for a note-taking application. It provides endpoints for
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/bakharia/neofi_note_api.git
    ```
 2. Navigate to the project directory:
 
@@ -36,11 +36,11 @@ This is the API backend for a note-taking application. It provides endpoints for
 
 - User Registration
 
-  **Route:** `/signup/`
-  **Method:** POST
-  **Description:** Register a new user account.
-  **Request Body:** JSON object containing `username`, `email`, and `password`.
-  **Headers:** No additional headers required.
+  **Route:** `/signup/`\
+  **Method:** POST\
+  **Description:** Register a new user account.\
+  **Request Body:** JSON object containing `username`, `email`, and `password`.\
+  **Headers:** No additional headers required.\
   **Response:**
 
   ```json
@@ -53,11 +53,11 @@ This is the API backend for a note-taking application. It provides endpoints for
   - `400 BAD REQUEST` if request data is invalid, returns error details.
 - User Login
 
-  **Route:** `/login/`
-  **Method:** POST
-  **Description:** Log in to an existing user account.
-  **Request Body:** JSON object containing `username` and `password`.
-  **Headers:** No additional headers required.
+  **Route:** `/login/`\
+  **Method:** POST\
+  **Description:** Log in to an existing user account.\
+  **Request Body:** JSON object containing `username` and `password`.\
+  **Headers:** No additional headers required.\
   **Response:**
 
   ```json
@@ -71,10 +71,10 @@ This is the API backend for a note-taking application. It provides endpoints for
   - `401 UNAUTHORIZED` if login fails, returns error details.
 - Create Note
 
-  **Route:** `/notes/create/`
-  **Method:** POST
-  **Description:** Create a new note.
-  **Request Body:** JSON object containing `title` and `content` of the note.
+  **Route:** `/notes/create/`\
+  **Method:** POST\
+  **Description:** Create a new note.\
+  **Request Body:** JSON object containing `title` and `content` of the note.\
   **Headers:**
 
   ```
@@ -96,9 +96,9 @@ This is the API backend for a note-taking application. It provides endpoints for
   - `400 BAD REQUEST` if request data is invalid, returns error details.
 - List Notes
 
-  **Route:** `/notes/list/`
-  **Method:** GET
-  **Description:** List all notes accessible to the authenticated user.
+  **Route:** `/notes/list/`\
+  **Method:** GET\
+  **Description:** List all notes accessible to the authenticated user.\
   **Headers:**
 
   ```
@@ -125,9 +125,9 @@ This is the API backend for a note-taking application. It provides endpoints for
   - `404 NOT FOUND` if no notes are found.
 - Get Note
 
-  **Route:** `/notes/<int:id>/`
-  **Method:** GET
-  **Description:** Retrieve details of a specific note by its ID.
+  **Route:** `/notes/<int:id>/`\
+  **Method:** GET\
+  **Description:** Retrieve details of a specific note by its ID.\
   **Headers:**
 
   ```
@@ -150,10 +150,10 @@ This is the API backend for a note-taking application. It provides endpoints for
   - `404 NOT FOUND` if note does not exist.
 - Share Note
 
-  **Route:** `/notes/share/`
-  **Method:** POST
-  **Description:** Share a note with other users.
-  **Request Body:** JSON object containing `note_id` and list of `usernames` to share with.
+  **Route:** `/notes/share/`\
+  **Method:** POST\
+  **Description:** Share a note with other users.\
+  **Request Body:** JSON object containing `note_id` and list of `usernames` to share with.\
   **Headers:**
 
   ```
@@ -173,10 +173,10 @@ This is the API backend for a note-taking application. It provides endpoints for
   - `404 NOT FOUND` if note does not exist or user does not have permission to share it.
 - Update Note
 
-  **Route:** `/notes/update/<int:id>/`
-  **Method:** PUT
-  **Description:** Update the content of a note.
-  **Request Body:** JSON object containing updated `content` of the note.
+  **Route:** `/notes/update/<int:id>/`\
+  **Method:** PUT\
+  **Description:** Update the content of a note.\
+  **Request Body:** JSON object containing updated `content` of the note.\
   **Headers:**
 
   ```
@@ -199,9 +199,9 @@ This is the API backend for a note-taking application. It provides endpoints for
   - `404 NOT FOUND` if note does not exist.
 - Get Note Version History
 
-  **Route:** `/notes/version-history/<int:id>/`
-  **Method:** GET
-  **Description:** Retrieve the version history of a note.
+  **Route:** `/notes/version-history/<int:id>/`\
+  **Method:** GET\
+  **Description:** Retrieve the version history of a note.\
   **Headers:**
 
   ```
