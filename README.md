@@ -241,7 +241,7 @@ curl -X POST http://localhost:8000/signup/ -d "username=<username>&email=<email>
 ### 2. User Login (`POST /login/`)
 
 ```bash
-curl -X POST http://localhost:8000/notes/create/ -H "Authorization: Token <token>" -d "title=<title>&content=<content>"
+curl -X POST http://localhost:8000/login/ -d "username=<username>&password=<password>"
 ```
 
 ### 3. Create a Note (`POST /notes/create/`)
